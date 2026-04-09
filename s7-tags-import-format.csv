@@ -1,0 +1,4 @@
+DB number,data type,offset;description
+1,INT,0;This is the first tag
+2,BOOL,1;This is the second tag
+3,REAL,2;This is the third tag
