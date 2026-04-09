@@ -1,0 +1,2179 @@
+[
+    {
+        "id": "196e0b34333e232b",
+        "type": "tab",
+        "label": "Water/Steam",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cba18458b042f0e9",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP19 STEAM DRUM PRESSURE (4-20mA = 0-63 Bar)",
+        "diff": true,
+        "name": "",
+        "x": 260,
+        "y": 100,
+        "wires": [
+            [
+                "dcd54432ec49486b"
+            ]
+        ]
+    },
+    {
+        "id": "8213a6f67bb5fdc7",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP19 DP CELL WATER LEVEL (4-20mA = 140-1100 mm)",
+        "diff": true,
+        "name": "",
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "c2b32764fc2517b4"
+            ]
+        ]
+    },
+    {
+        "id": "607e1797f4768563",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP19 SUPERHEATER 2 STEAM OUTLET PRESSURE (4-20mA = 0-63 Bar)",
+        "diff": true,
+        "name": "",
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "f611a4e37f6dde9e"
+            ]
+        ]
+    },
+    {
+        "id": "3ea5af6840cc4f7e",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP19 TEMPERATURE BEFORE DESUPERHEATER (TC) (???-??? ºC)",
+        "diff": true,
+        "name": "",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "3f2c8d32f8f74ad1"
+            ]
+        ]
+    },
+    {
+        "id": "4e3d1a96ba1f4404",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP19 TEMPERATURE AFTER DESUPERHEATER (TC) (???-??? ºC)",
+        "diff": true,
+        "name": "",
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "ddc51c90c1cc3f82"
+            ]
+        ]
+    },
+    {
+        "id": "7d453b3534d7dc64",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP17 FEEDWATER TO DESUPERHEATER SETPOINT",
+        "diff": false,
+        "name": "",
+        "x": 260,
+        "y": 400,
+        "wires": [
+            [
+                "da669d12ee537271"
+            ]
+        ]
+    },
+    {
+        "id": "370fe4ef245530ba",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP17 FEEDWATER TO DESUPERHEATER CONTROL VALVE ACTUAL POSITION (4-20mA = 0-100%)",
+        "diff": true,
+        "name": "",
+        "x": 410,
+        "y": 460,
+        "wires": [
+            [
+                "588c12a88bbd612b"
+            ]
+        ]
+    },
+    {
+        "id": "3d4767774f728be3",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP7 AMBIENT TEMPERATURE (4-20mA = 0-150 ºC)",
+        "diff": true,
+        "name": "",
+        "x": 260,
+        "y": 520,
+        "wires": [
+            [
+                "db56ea027c416c39"
+            ]
+        ]
+    },
+    {
+        "id": "36847c369a2d3ee3",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP17 PRESSURE REDUCING DESUPERHEATER VALVE HP STEAM TO FW TANK (4-20mA = 0-100%",
+        "diff": true,
+        "name": "",
+        "x": 420,
+        "y": 580,
+        "wires": [
+            [
+                "f588b1156b5f466d"
+            ]
+        ]
+    },
+    {
+        "id": "d9e836911237e9a8",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP17 DEAERATOR PRESSURE TRANSDUCER (4-20mA = xx Bar)",
+        "diff": true,
+        "name": "",
+        "x": 300,
+        "y": 640,
+        "wires": [
+            [
+                "4ea857169a8079d2"
+            ]
+        ]
+    },
+    {
+        "id": "b3775cd8d97d0d16",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "CP17 TREATED WATER TANK LEVEL TRANSDUCER (4-20mA = 0-100%)",
+        "diff": true,
+        "name": "",
+        "x": 320,
+        "y": 700,
+        "wires": [
+            [
+                "74176fb04ddcd41a"
+            ]
+        ]
+    },
+    {
+        "id": "dcd54432ec49486b",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "STEAM_DRUM_PRESSURE",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1020,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2b32764fc2517b4",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "STEAM_DRUM_LEVEL",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1010,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f611a4e37f6dde9e",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "SUPER_HEATER_OUTLET_PRESSURE",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1060,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f2c8d32f8f74ad1",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "TEMPERATURE_BEFORE_DESUPERHEATER",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1080,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ddc51c90c1cc3f82",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "TEMPERATURE_AFTER_DESUPERHEATER",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1080,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da669d12ee537271",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "DESUPERHEATER_VALVE_SETPOINT",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1060,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "588c12a88bbd612b",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "DESUPERHEATER_VALVE_POSITION",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1060,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db56ea027c416c39",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "AMBIENT_TEMPERATURE",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1020,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f588b1156b5f466d",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "CP17_2CV07_POSITION",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1010,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ea857169a8079d2",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "DEAERATOR_PRESSURE",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1020,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74176fb04ddcd41a",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "TREATED_WATER_TANK_LEVEL",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1040,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b44063c8ec40b32",
+        "type": "inject",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "0 0-23 * * *",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 1020,
+        "wires": [
+            [
+                "2b7b5e89b92982b4",
+                "7eb20f0bc41ab565",
+                "cee9218b811e06e7",
+                "ccb6d545c0f94758",
+                "b0efc7e4a1ecdafe",
+                "f097e29faad28dac",
+                "b8fd05bd966f2bd9",
+                "c170b44b43667d18",
+                "b96835539022dde4",
+                "f655ee612ce498f1",
+                "8ed5b1dfa6abd9d3",
+                "c4890e4dd7f9e3d3",
+                "bd45c6da9206aee4",
+                "7add18c28535bff8",
+                "d9f142d0492f62dd"
+            ]
+        ]
+    },
+    {
+        "id": "2b7b5e89b92982b4",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "STEAM_OUTLET_FLOW",
+        "format": "utf8",
+        "x": 330,
+        "y": 920,
+        "wires": [
+            [
+                "bf25bc1c620e8fab"
+            ]
+        ]
+    },
+    {
+        "id": "7eb20f0bc41ab565",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "STEAM_DRUM_LEVEL",
+        "format": "utf8",
+        "x": 330,
+        "y": 880,
+        "wires": [
+            [
+                "c8eba74f8adbe0ab"
+            ]
+        ]
+    },
+    {
+        "id": "cee9218b811e06e7",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "STEAM_DRUM_PRESSURE",
+        "format": "utf8",
+        "x": 340,
+        "y": 840,
+        "wires": [
+            [
+                "c93efba99683c499"
+            ]
+        ]
+    },
+    {
+        "id": "b0efc7e4a1ecdafe",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "STEAM_OUTLET_TEMP",
+        "format": "utf8",
+        "x": 330,
+        "y": 960,
+        "wires": [
+            [
+                "161b746bad08ac18"
+            ]
+        ]
+    },
+    {
+        "id": "ccb6d545c0f94758",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "SUPER_HEATER_OUTLET_PRESSURE",
+        "format": "utf8",
+        "x": 380,
+        "y": 1000,
+        "wires": [
+            [
+                "62833a31a690b035"
+            ]
+        ]
+    },
+    {
+        "id": "f097e29faad28dac",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "TEMPERATURE_BEFORE_DESUPERHEATER",
+        "format": "utf8",
+        "x": 400,
+        "y": 1040,
+        "wires": [
+            [
+                "9507d67c1f7ec02b"
+            ]
+        ]
+    },
+    {
+        "id": "b8fd05bd966f2bd9",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "DESUPERHEATER_VALVE_SETPOINT",
+        "format": "utf8",
+        "x": 380,
+        "y": 1120,
+        "wires": [
+            [
+                "fda7c2ae030aebdc"
+            ]
+        ]
+    },
+    {
+        "id": "c170b44b43667d18",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "DESUPERHEATER_VALVE_POSITION",
+        "format": "utf8",
+        "x": 380,
+        "y": 1160,
+        "wires": [
+            [
+                "d4fa890feeee443f"
+            ]
+        ]
+    },
+    {
+        "id": "b96835539022dde4",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "TEMPERATURE_AFTER_DESUPERHEATER",
+        "format": "utf8",
+        "x": 400,
+        "y": 1080,
+        "wires": [
+            [
+                "ceecd2734a4aa53b"
+            ]
+        ]
+    },
+    {
+        "id": "d9f142d0492f62dd",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "COOLING_LOOP_FLOW_TEMP",
+        "format": "utf8",
+        "x": 360,
+        "y": 1200,
+        "wires": [
+            [
+                "9e3a33007ed706ed"
+            ]
+        ]
+    },
+    {
+        "id": "7add18c28535bff8",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "COOLING_LOOP_RETURN_TEMP",
+        "format": "utf8",
+        "x": 370,
+        "y": 1240,
+        "wires": [
+            [
+                "09ddbd23a29f0944"
+            ]
+        ]
+    },
+    {
+        "id": "bd45c6da9206aee4",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "AMBIENT_TEMPERATURE",
+        "format": "utf8",
+        "x": 340,
+        "y": 1280,
+        "wires": [
+            [
+                "38ee6a2b69e6d31a"
+            ]
+        ]
+    },
+    {
+        "id": "c4890e4dd7f9e3d3",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "CP17_2CV07_POSITION",
+        "format": "utf8",
+        "x": 330,
+        "y": 1320,
+        "wires": [
+            [
+                "a99702825001ace2"
+            ]
+        ]
+    },
+    {
+        "id": "8ed5b1dfa6abd9d3",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "DEAERATOR_PRESSURE",
+        "format": "utf8",
+        "x": 340,
+        "y": 1360,
+        "wires": [
+            [
+                "138a78ec0faf03d2"
+            ]
+        ]
+    },
+    {
+        "id": "f655ee612ce498f1",
+        "type": "file in",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "TREATED_WATER_TANK_LEVEL",
+        "format": "utf8",
+        "x": 360,
+        "y": 1400,
+        "wires": [
+            [
+                "a7cbed0c9e3311c8"
+            ]
+        ]
+    },
+    {
+        "id": "fa6235c681d25237",
+        "type": "join",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "5",
+        "count": "15",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1010,
+        "y": 1100,
+        "wires": [
+            [
+                "a958a8e94c2ea175"
+            ]
+        ]
+    },
+    {
+        "id": "a99702825001ace2",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"CP17_2CV07_POSITION\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1320,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "38ee6a2b69e6d31a",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"AMBIENT_TEMPERATURE\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1280,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "09ddbd23a29f0944",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"COOLING_LOOP_RETURN_TEMP\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1240,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "9e3a33007ed706ed",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"COOLING_LOOP_FLOW_TEMP\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1200,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "9507d67c1f7ec02b",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"TEMPERATURE_BEFORE_DESUPERHEATER\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1040,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "62833a31a690b035",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"SUPER_HEATER_OUTLET_PRESSURE\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1000,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "ceecd2734a4aa53b",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"TEMPERATURE_AFTER_DESUPERHEATER\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1080,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "d4fa890feeee443f",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"DESUPERHEATER_VALVE_POSITION\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1160,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "fda7c2ae030aebdc",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"DESUPERHEATER_VALVE_SETPOINT\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1120,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "c93efba99683c499",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"STEAM_DRUM_PRESSURE\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 840,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "c8eba74f8adbe0ab",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"STEAM_DRUM_LEVEL\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 880,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "161b746bad08ac18",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"STEAM_OUTLET_TEMP\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 960,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "bf25bc1c620e8fab",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"STEAM_OUTLET_FLOW\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 920,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "a7cbed0c9e3311c8",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"TREATED_WATER_TANK_LEVEL\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1400,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "138a78ec0faf03d2",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "set msg topic",
+        "func": "msg.topic=\"DEAERATOR_PRESSURE\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1360,
+        "wires": [
+            [
+                "fa6235c681d25237"
+            ]
+        ]
+    },
+    {
+        "id": "a4cb53945c4bad84",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "STEAM_OUTLET_TEMP",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1770,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a92b06a54759d5ef",
+        "type": "file",
+        "z": "196e0b34333e232b",
+        "name": "",
+        "filename": "STEAM_OUTLET_FLOW",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 1770,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d0ed17f087568ee9",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "STEAM_OUTLET_TEMP",
+        "diff": false,
+        "name": "",
+        "x": 1490,
+        "y": 280,
+        "wires": [
+            [
+                "a4cb53945c4bad84"
+            ]
+        ]
+    },
+    {
+        "id": "46bb48d0371ebb08",
+        "type": "s7 in",
+        "z": "196e0b34333e232b",
+        "endpoint": "edb0cf2e.04f1d",
+        "mode": "single",
+        "variable": "STEAM_OUTLET",
+        "diff": false,
+        "name": "",
+        "x": 1470,
+        "y": 340,
+        "wires": [
+            [
+                "a92b06a54759d5ef"
+            ]
+        ]
+    },
+    {
+        "id": "69ea99897a58d949",
+        "type": "MSSQL",
+        "z": "196e0b34333e232b",
+        "mssqlCN": "e928c3e50ff759c0",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "bulk",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 1460,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a958a8e94c2ea175",
+        "type": "function",
+        "z": "196e0b34333e232b",
+        "name": "Build STEAM SQL Insert",
+        "func": "// Timestamp for SQL Server\nvar ts = new Date().toISOString();\n\n// Extract joined payload\nvar p = msg.payload;\n\n// Build SQL INSERT for MSSQL bulk mode\nmsg.payload =\n    \"INSERT INTO STEAM (\" +\n    \"Time_stamp, \" +\n    \"STEAM_DRUM_PRESSURE, STEAM_DRUM_LEVEL, STEAM_OUTLET_FLOW, STEAM_OUTLET_TEMP, \" +\n    \"SUPER_HEATER_OUTLET_PRESSURE, TEMPERATURE_BEFORE_DESUPERHEATER, TEMPERATURE_AFTER_DESUPERHEATER, \" +\n    \"DESUPERHEATER_VALVE_SETPOINT, DESUPERHEATER_VALVE_POSITION, COOLING_LOOP_FLOW_TEMP, \" +\n    \"COOLING_LOOP_RETURN_TEMP, AMBIENT_TEMPERATURE, CP17_2CV07_POSITION, DEAERATOR_PRESSURE, \" +\n    \"TREATED_WATER_TANK_LEVEL\" +\n    \") VALUES ('\" +\n    ts + \"', '\" +\n    p.STEAM_DRUM_PRESSURE + \"', '\" +\n    p.STEAM_DRUM_LEVEL + \"', '\" +\n    p.STEAM_OUTLET_FLOW + \"', '\" +\n    p.STEAM_OUTLET_TEMP + \"', '\" +\n    p.SUPER_HEATER_OUTLET_PRESSURE + \"', '\" +\n    p.TEMPERATURE_BEFORE_DESUPERHEATER + \"', '\" +\n    p.TEMPERATURE_AFTER_DESUPERHEATER + \"', '\" +\n    p.DESUPERHEATER_VALVE_SETPOINT + \"', '\" +\n    p.DESUPERHEATER_VALVE_POSITION + \"', '\" +\n    p.COOLING_LOOP_FLOW_TEMP + \"', '\" +\n    p.COOLING_LOOP_RETURN_TEMP + \"', '\" +\n    p.AMBIENT_TEMPERATURE + \"', '\" +\n    p.CP17_2CV07_POSITION + \"', '\" +\n    p.DEAERATOR_PRESSURE + \"', '\" +\n    p.TREATED_WATER_TANK_LEVEL +\n    \"')\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 1100,
+        "wires": [
+            [
+                "69ea99897a58d949"
+            ]
+        ]
+    },
+    {
+        "id": "edb0cf2e.04f1d",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.2.10",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "",
+        "cycletime": "10000",
+        "timeout": "1500",
+        "name": "Main Plc",
+        "vartable": [
+            {
+                "addr": "DB400,DINT12",
+                "name": "Live Steam Bar"
+            },
+            {
+                "addr": "DB1,X0.1",
+                "name": "FAULT RESET"
+            },
+            {
+                "addr": "DB1,X12.0",
+                "name": "TURBINE ONLINE"
+            },
+            {
+                "addr": "DB1,X2.4",
+                "name": "CP2 PUSH FLOOR LADDER 1 IN SERVICE"
+            },
+            {
+                "addr": "DB1,X2.5",
+                "name": "CP2 PUSH FLOOR LADDER 2 IN SERVICE"
+            },
+            {
+                "addr": "DB1,X2.6",
+                "name": "CP2 PUSH FLOOR LADDER 3 IN SERVICE"
+            },
+            {
+                "addr": "DB1,X2.7",
+                "name": "CP2 PUSH FLOOR LADDER 4 IN SERVICE"
+            },
+            {
+                "addr": "DB1,X3.0",
+                "name": "CP2 PUSH FLOOR LADDER 5 IN SERVICE"
+            },
+            {
+                "addr": "DB1,X3.1",
+                "name": "CP2 PUSH FLOOR LADDER 6 IN SERVICE"
+            },
+            {
+                "addr": "DB1,X7.1",
+                "name": "STOKER 1 PID CONTROLLER METHOD 1 SELECTED"
+            },
+            {
+                "addr": "DB1,X7.2",
+                "name": "STOKER 1 PID CONTROLLER METHOD 2 SELECTED"
+            },
+            {
+                "addr": "DB1,X7.3",
+                "name": "STOKER 1 PID CONTROLLER METHOD 3 SELECTED"
+            },
+            {
+                "addr": "DB1,X7.4",
+                "name": "STOKER 1 PID CONTROLLER METHOD 4 SELECTED"
+            },
+            {
+                "addr": "DB1,X7.6",
+                "name": "STOKER 2 PID CONTROLLER METHOD 1 SELECTED"
+            },
+            {
+                "addr": "DB1,X7.7",
+                "name": "STOKER 2 PID CONTROLLER METHOD 2 SELECTED"
+            },
+            {
+                "addr": "DB1,X8.0",
+                "name": "STOKER 2 PID CONTROLLER METHOD 3 SELECTED"
+            },
+            {
+                "addr": "DB1,X8.1",
+                "name": "STOKER 2 PID CONTROLLER METHOD 4 SELECTED"
+            },
+            {
+                "addr": "DB1,X8.2",
+                "name": "STOKER 3 PID CONTROLLER METHOD 1 SELECTED"
+            },
+            {
+                "addr": "DB1,X8.3",
+                "name": "STOKER 3 PID CONTROLLER METHOD 2 SELECTED"
+            },
+            {
+                "addr": "DB1,X8.4",
+                "name": "STOKER 3 PID CONTROLLER METHOD 3 SELECTED"
+            },
+            {
+                "addr": "DB1,X8.5",
+                "name": "STOKER 3 PID CONTROLLER METHOD 4 SELECTED"
+            },
+            {
+                "addr": "DB11,X83.1",
+                "name": " COMPRESSOR 1 TRIP"
+            },
+            {
+                "addr": "DB11,X83.3",
+                "name": " COMPRESSOR 2 TRIP"
+            },
+            {
+                "addr": "DB11,X105.1",
+                "name": "SCRAPER CHAIN TENSION ALARM"
+            },
+            {
+                "addr": "DB11,X104.7",
+                "name": "SCRAPER CHAIN ROTATION ALARM"
+            },
+            {
+                "addr": "DB11,X105.6",
+                "name": "EN-MASSE CHAIN CONVEYOR ROTATION FAULT"
+            },
+            {
+                "addr": "DB11,X5.6",
+                "name": "EN-MASSE CHAIN CONVEYOR TENSIONER ALARM"
+            },
+            {
+                "addr": "DB11,X80.0",
+                "name": " BOILER LOW LOW WATER LEVEL TRIP"
+            },
+            {
+                "addr": "DB11,X104.4",
+                "name": "PUSH FLOOR  TIMEOUT"
+            },
+            {
+                "addr": "DB11,X105.7",
+                "name": "EN-MASSE CHAIN CONVEYOR TOP CHUTE BLOCKED ALARM"
+            },
+            {
+                "addr": "DB40,REAL1422",
+                "name": "SECONDRY_AIR_FAN_PID_MIN_SETPOINT"
+            },
+            {
+                "addr": "DB40,REAL1684",
+                "name": "OIL BURNER LOAD SETPOINT"
+            },
+            {
+                "addr": "DB40,REAL1362",
+                "name": "Primary Air Fan Setpoint"
+            },
+            {
+                "addr": "DB40,REAL1582",
+                "name": "CP17 FEEDWATER TO DESUPERHEATER SETPOINT"
+            },
+            {
+                "addr": "DB40,INT900",
+                "name": "Wood Feed Trip Time (s)"
+            },
+            {
+                "addr": "DB42,REAL116",
+                "name": "Bicarb Silo"
+            },
+            {
+                "addr": "DB42,REAL112",
+                "name": "Fly Ash Silo"
+            },
+            {
+                "addr": "DB42,REAL252",
+                "name": "STEAM_OUTLET"
+            },
+            {
+                "addr": "DB42,REAL424",
+                "name": "STEAM_OUTLET_TEMP"
+            },
+            {
+                "addr": "DB42,REAL1304",
+                "name": "GRATE_THERMAL_LOAD"
+            },
+            {
+                "addr": "DB42,REAL104",
+                "name": "FILTER1_DP"
+            },
+            {
+                "addr": "DB42,REAL140",
+                "name": "FILTER2_INLET"
+            },
+            {
+                "addr": "DB42,REAL144",
+                "name": "FILTER2_OUTLET"
+            },
+            {
+                "addr": "DB42,REAL108",
+                "name": "FILTER2_DP"
+            },
+            {
+                "addr": "DB42,REAL124",
+                "name": "FILTER1_INLET"
+            },
+            {
+                "addr": "DB42,REAL128",
+                "name": "FILTER1_OUTLET"
+            },
+            {
+                "addr": "DB42,REAL304",
+                "name": "GRATE_DP_1"
+            },
+            {
+                "addr": "DB42,REAL308",
+                "name": "GRATE_DP_2"
+            },
+            {
+                "addr": "DB42,REAL1404",
+                "name": "EXTRACTION STEAM PRESSURE"
+            },
+            {
+                "addr": "DB42,REAL76",
+                "name": "CP7 COOLING CIRCULATION WATER FLOW TEMPERATURE"
+            },
+            {
+                "addr": "DB42,REAL80",
+                "name": "CP7 COOLING CIRCULATION WATER RETURN TEMPERATURE"
+            },
+            {
+                "addr": "DB42,REAL336",
+                "name": "CP19 STEAM DRUM PRESSURE (4-20mA = 0-63 Bar)"
+            },
+            {
+                "addr": "DB42,REAL332",
+                "name": "CP19 DP CELL WATER LEVEL (4-20mA = 140-1100 mm)"
+            },
+            {
+                "addr": "DB42,REAL344",
+                "name": "CP19 SUPERHEATER 2 STEAM OUTLET PRESSURE (4-20mA = 0-63 Bar)"
+            },
+            {
+                "addr": "DB42,REAL376",
+                "name": "CP19 TEMPERATURE BEFORE DESUPERHEATER (TC) (???-??? ºC)"
+            },
+            {
+                "addr": "DB42,REAL424",
+                "name": "CP19 SUPERHEATER 2 STEAM OUTLET TEMPERATURE (4-20mA = 0-450 ºC)"
+            },
+            {
+                "addr": "DB42,REAL224",
+                "name": "CP17 FEEDWATER TO DESUPERHEATER CONTROL VALVE ACTUAL POSITION (4-20mA = 0-100%)"
+            },
+            {
+                "addr": "DB42,REAL88",
+                "name": "CP7 AMBIENT TEMPERATURE (4-20mA = 0-150 ºC)"
+            },
+            {
+                "addr": "DB42,REAL624",
+                "name": "CP17 PRESSURE REDUCING DESUPERHEATER VALVE HP STEAM TO FW TANK (4-20mA = 0-100%"
+            },
+            {
+                "addr": "DB42,REAL216",
+                "name": "CP17 DEAERATOR PRESSURE TRANSDUCER (4-20mA = xx Bar)"
+            },
+            {
+                "addr": "DB42,REAL204",
+                "name": "CP17 TREATED WATER TANK LEVEL TRANSDUCER (4-20mA = 0-100%)"
+            },
+            {
+                "addr": "DB42,REAL380",
+                "name": "CP19 TEMPERATURE AFTER DESUPERHEATER (TC) (???-??? ºC)"
+            },
+            {
+                "addr": "DB42,REAL288",
+                "name": "1TT01"
+            },
+            {
+                "addr": "DB42,REAL292",
+                "name": "1TT02"
+            },
+            {
+                "addr": "DB42,REAL296",
+                "name": "1TT03"
+            },
+            {
+                "addr": "DB42,REAL300",
+                "name": "1TT04"
+            },
+            {
+                "addr": "DB42,REAL1284",
+                "name": "AVERAGE CHAMBER TEMP"
+            },
+            {
+                "addr": "DB42,REAL860",
+                "name": "STACK TEMPERATURE"
+            },
+            {
+                "addr": "DB44,X3.7",
+                "name": "PLANT AIR PRESSURE HEALTHY"
+            },
+            {
+                "addr": "DB44,X2.5",
+                "name": "BOILER PANEL CP7 EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X2.6",
+                "name": "FILTER OPERATOR STATION OS13a EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X3.1",
+                "name": "CONTROL ROOM L/HAND EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X3.2",
+                "name": "CONTROL ROOM R/HAND EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X3.0",
+                "name": "BICARB LOADING STATION OS13d EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X2.0",
+                "name": "PUSH FLOOR PANEL CP2 EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X2.1",
+                "name": "PUSH FLOOR STATION OS2.1 EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X2.7",
+                "name": "FILTER OPERATOR PENDANT OS13b EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X2.2",
+                "name": "PUSH FLOOR STATION OS2.2 EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X2.3",
+                "name": "PUSHFLOOR DELIVERY AREA CP2/8 EM STOP P/BUTTON HEALTHY (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X4.3",
+                "name": "BOILER PANEL CP19 SUPERHEATER 2 HI HI OUTLET TEMP TRIP (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X5.1",
+                "name": "BOILER PANEL CP19 LO COMBUSTION CHAMBER OXYGEN LEVEL TRIP (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X4.4",
+                "name": "BOILER PANEL CP19 HI HI STEAM OUTLET TEMP GUARD TRIP (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X4.6",
+                "name": "BOILER PANEL CP19 HI STEAM DRUM PRESSURE TRIP (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X4.1",
+                "name": "BOILER PANEL CP7 BOILER HI HI WATER LEVEL (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X5.0",
+                "name": "BURNER PANEL CP18 HI HI COMBUSTION CHAMBER PRESSURE TRIP (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X4.2",
+                "name": "BOILER PANEL CP19 HI HI STEAM DRUM PRESSURE TRIP (1=HEALTHY)"
+            },
+            {
+                "addr": "DB44,X4.0",
+                "name": "BOILER PANEL CP7 BOILER LOW LOW WATER LEVEL (1=HEALTHY)"
+            },
+            {
+                "addr": "DB511,REAL46",
+                "name": "ID_FAN"
+            },
+            {
+                "addr": "DB513,REAL46",
+                "name": "PRIMARY_AIR_FAN"
+            },
+            {
+                "addr": "DB514,REAL46",
+                "name": "SECONDRY_AIR_FAN"
+            },
+            {
+                "addr": "DB515,REAL46",
+                "name": "RECIRC_AIR_FAN"
+            },
+            {
+                "addr": "I10.6",
+                "name": "DISTRIBUTION SCREW LOCAL ISOLATOR,"
+            },
+            {
+                "addr": "I10.7",
+                "name": "SCRAPER CHAIN LOCAL ISOLATOR,"
+            },
+            {
+                "addr": "I100.0",
+                "name": "WET ASH CONVEYOR LOCAL ISOLATOR,"
+            },
+            {
+                "addr": "I100.1",
+                "name": "EN-MASSE CONVEYOR LOCAL ISOLATOR,"
+            },
+            {
+                "addr": "I75.1",
+                "name": "OIL BURNER RUNNING,"
+            },
+            {
+                "addr": "Q81.0",
+                "name": "HP DOSING PUMP,"
+            },
+            {
+                "addr": "DB202,REAL0",
+                "name": "Turbine VOLTS L1 TO NEUTRAL (VOLTS)"
+            },
+            {
+                "addr": "DB202,REAL4",
+                "name": " Turbine VOLTS L2 TO NEUTRAL (VOLTS)"
+            },
+            {
+                "addr": "DB202,REAL8",
+                "name": "Turbine VOLTS L3 TO NEUTRAL (VOLTS)"
+            },
+            {
+                "addr": "DB202,REAL12",
+                "name": "Turbine VOLTS L1 TO L2 (VOLTS)"
+            },
+            {
+                "addr": "DB202,REAL16",
+                "name": "Turbine VOLTS L2 TO L3 (VOLTS)"
+            },
+            {
+                "addr": "DB202,REAL20",
+                "name": "Turbine VOLTS L3 TO L1 (VOLTS)"
+            },
+            {
+                "addr": "DB202,REAL24",
+                "name": "Turbine CURRENT L1 (AMPS)"
+            },
+            {
+                "addr": "DB202,REAL28",
+                "name": "Turbine CURRENT L2 (AMPS)"
+            },
+            {
+                "addr": "DB202,REAL32",
+                "name": "Turbine CURRENT L3 (AMPS)"
+            },
+            {
+                "addr": "DB202,REAL36",
+                "name": "Turbine APPARANT POWER  L1 (VA)"
+            },
+            {
+                "addr": "DB202,REAL40",
+                "name": "Turbine APPARANT POWER  L2 (VA)"
+            },
+            {
+                "addr": "DB202,REAL44",
+                "name": "Turbine APPARANT POWER  L3 (VA)"
+            },
+            {
+                "addr": "DB202,REAL48",
+                "name": "Turbine ACTIVE POWER L1 (W)"
+            },
+            {
+                "addr": "DB202,REAL52",
+                "name": "Turbine ACTIVE POWER L2 (W)"
+            },
+            {
+                "addr": "DB202,REAL56",
+                "name": "Turbine ACTIVE POWER L3 (W)"
+            },
+            {
+                "addr": "DB202,REAL60",
+                "name": "Turbine REACTIVE POWER L1 (VAr)"
+            },
+            {
+                "addr": "DB202,REAL64",
+                "name": "Turbine REACTIVE POWER L2 (VAr)"
+            },
+            {
+                "addr": "DB202,REAL68",
+                "name": "Turbine REACTIVE POWER L3 (VAr)"
+            },
+            {
+                "addr": "DB202,REAL72",
+                "name": "Turbine POWER FACTOR L1"
+            },
+            {
+                "addr": "DB202,REAL76",
+                "name": "Turbine POWER FACTOR L2"
+            },
+            {
+                "addr": "DB202,REAL80",
+                "name": "Turbine POWER FACTOR L3"
+            },
+            {
+                "addr": "DB202,REAL84",
+                "name": "Turbine FREQUENCY (HZ)"
+            },
+            {
+                "addr": "DB202,REAL88",
+                "name": "Turbine TOTAL APPARANT POWER (VA)"
+            },
+            {
+                "addr": "DB202,REAL92",
+                "name": "Turbine TOTAL ACTIVE POWER (W)"
+            },
+            {
+                "addr": "DB202,REAL96",
+                "name": "Turbine TOTAL REACTIVE POWER (VAr)"
+            },
+            {
+                "addr": "DB202,REAL100",
+                "name": "Turbine TOTAL POWER FACTOR"
+            },
+            {
+                "addr": "DB202,REAL104",
+                "name": "Turbine ACTIVE ENERGY USAGE (Wh)"
+            },
+            {
+                "addr": "DB202,REAL108",
+                "name": "Turbine REACTIVE ENERGY USAGE (VArh)"
+            },
+            {
+                "addr": "DB202,REAL112",
+                "name": "Turbine APPARANT ENERGY USAGE (VArh)"
+            },
+            {
+                "addr": "DB202,REAL116",
+                "name": "Turbine APPARANT POWER L1 (KVA)"
+            },
+            {
+                "addr": "DB202,REAL120",
+                "name": "Turbine APPARANT POWER L2 (KVA)"
+            },
+            {
+                "addr": "DB202,REAL124",
+                "name": "Turbine APPARANT POWER L3 (KVA)"
+            },
+            {
+                "addr": "DB202,REAL128",
+                "name": "Turbine ACTIVE POWER L1 (KVA)"
+            },
+            {
+                "addr": "DB202,REAL132",
+                "name": "Turbine ACTIVE POWER L2 (KVA)"
+            },
+            {
+                "addr": "DB202,REAL136",
+                "name": "Turbine ACTIVE POWER L3 (KVA)"
+            },
+            {
+                "addr": "DB202,REAL140",
+                "name": "Turbine REACTIVE POWER L1 (KVAr)"
+            },
+            {
+                "addr": "DB202,REAL144",
+                "name": "Turbine REACTIVE POWER L2 (KVAr)"
+            },
+            {
+                "addr": "DB202,REAL148",
+                "name": "Turbine REACTIVE POWER L3 (KVAr)"
+            },
+            {
+                "addr": "DB202,REAL152",
+                "name": "Turbine TOTAL APPARANT POWER  (KVA)"
+            },
+            {
+                "addr": "DB202,REAL156",
+                "name": "Turbine TOTAL ACTIVE POWER (KW)"
+            },
+            {
+                "addr": "DB202,REAL160",
+                "name": "Turbine TOTAL REACTIVE POWER (KVAr)"
+            },
+            {
+                "addr": "DB202,REAL164",
+                "name": "Turbine ACTIVE ENERGY USAGE (KWh)"
+            },
+            {
+                "addr": "DB202,REAL168",
+                "name": "Turbine REACTIVE ENERGY USAGE (KVArh)"
+            },
+            {
+                "addr": "DB202,REAL172",
+                "name": "Turbine APPARANT ENERGY USAGE (KVArh)"
+            },
+            {
+                "addr": "DB200,REAL0",
+                "name": "LV POWER METER - GRID VOLTS L1 TO NEUTRAL (VOLTS)"
+            },
+            {
+                "addr": "DB200,REAL4",
+                "name": "LV POWER METER - GRID VOLTS L2 TO NEUTRAL (VOLTS)"
+            },
+            {
+                "addr": "DB200,REAL8",
+                "name": "LV POWER METER - GRID VOLTS L3 TO NEUTRAL (VOLTS)"
+            },
+            {
+                "addr": "DB200,REAL12",
+                "name": "LV POWER METER - GRID VOLTS L1 TO L2 (VOLTS)"
+            },
+            {
+                "addr": "DB200,REAL16",
+                "name": "LV POWER METER - GRID VOLTS L2 TO L3 (VOLTS)"
+            },
+            {
+                "addr": "DB200,REAL20",
+                "name": "LV POWER METER - GRID VOLTS L3 TO L1 (VOLTS)"
+            },
+            {
+                "addr": "DB200,REAL24",
+                "name": "LV POWER METER - GRID CURRENT L1 (AMPS)"
+            },
+            {
+                "addr": "DB200,REAL28",
+                "name": "LV POWER METER - GRID CURRENT L2 (AMPS)"
+            },
+            {
+                "addr": "DB200,REAL32",
+                "name": "LV POWER METER - GRID CURRENT L3 (AMPS)"
+            },
+            {
+                "addr": "DB200,REAL36",
+                "name": "LV POWER METER - GRID APPARANT POWER  L1 (VA)"
+            },
+            {
+                "addr": "DB200,REAL40",
+                "name": "LV POWER METER - GRID APPARANT POWER  L2 (VA)"
+            },
+            {
+                "addr": "DB200,REAL44",
+                "name": "LV POWER METER - GRID APPARANT POWER  L3 (VA)"
+            },
+            {
+                "addr": "DB200,REAL48",
+                "name": "LV POWER METER - GRID ACTIVE POWER L1 (W)"
+            },
+            {
+                "addr": "DB200,REAL52",
+                "name": "LV POWER METER - GRID ACTIVE POWER L2 (W)"
+            },
+            {
+                "addr": "DB200,REAL56",
+                "name": "LV POWER METER - GRID ACTIVE POWER L3 (W)"
+            },
+            {
+                "addr": "DB200,REAL60",
+                "name": "LV POWER METER - GRID REACTIVE POWER L1 (VAr)"
+            },
+            {
+                "addr": "DB200,REAL64",
+                "name": "LV POWER METER - GRID REACTIVE POWER L2 (VAr)"
+            },
+            {
+                "addr": "DB200,REAL68",
+                "name": "LV POWER METER - GRID REACTIVE POWER L3 (VAr)"
+            },
+            {
+                "addr": "DB200,REAL72",
+                "name": "LV POWER METER - GRID POWER FACTOR L1"
+            },
+            {
+                "addr": "DB200,REAL76",
+                "name": "LV POWER METER - GRID POWER FACTOR L2"
+            },
+            {
+                "addr": "DB200,REAL80",
+                "name": "LV POWER METER - GRID POWER FACTOR L3"
+            },
+            {
+                "addr": "DB200,REAL84",
+                "name": "LV POWER METER - GRID FREQUENCY (HZ)"
+            },
+            {
+                "addr": "DB200,REAL88",
+                "name": "LV POWER METER - GRID TOTAL APPARANT POWER (VA)"
+            },
+            {
+                "addr": "DB200,REAL92",
+                "name": "LV POWER METER - GRID TOTAL ACTIVE POWER (W)"
+            },
+            {
+                "addr": "DB200,REAL96",
+                "name": "LV POWER METER - GRID TOTAL REACTIVE POWER (VAr)"
+            },
+            {
+                "addr": "DB200,REAL100",
+                "name": "LV POWER METER - GRID TOTAL POWER FACTOR"
+            },
+            {
+                "addr": "DB200,REAL104",
+                "name": "LV POWER METER - GRID ACTIVE ENERGY USAGE (Wh)"
+            },
+            {
+                "addr": "DB200,REAL108",
+                "name": "LV POWER METER - GRID REACTIVE ENERGY USAGE (VArh)"
+            },
+            {
+                "addr": "DB200,REAL112",
+                "name": "LV POWER METER - GRID APPARANT ENERGY USAGE (VArh)"
+            },
+            {
+                "addr": "DB200,REAL116",
+                "name": "LV POWER METER - GRID APPARANT POWER L1 (KVA)"
+            },
+            {
+                "addr": "DB200,REAL120",
+                "name": "LV POWER METER - GRID APPARANT POWER L2 (KVA)"
+            },
+            {
+                "addr": "DB200,REAL124",
+                "name": "LV POWER METER - GRID APPARANT POWER L3 (KVA)"
+            },
+            {
+                "addr": "DB200,REAL128",
+                "name": "LV POWER METER - GRID ACTIVE POWER L1 (KVA)"
+            },
+            {
+                "addr": "DB200,REAL132",
+                "name": "LV POWER METER - GRID ACTIVE POWER L2 (KVA)"
+            },
+            {
+                "addr": "DB200,REAL136",
+                "name": "LV POWER METER - GRID ACTIVE POWER L3 (KVA)"
+            },
+            {
+                "addr": "DB200,REAL140",
+                "name": "LV POWER METER - GRID REACTIVE POWER L1 (KVAr)"
+            },
+            {
+                "addr": "DB200,REAL144",
+                "name": "LV POWER METER - GRID REACTIVE POWER L2 (KVAr)"
+            },
+            {
+                "addr": "DB200,REAL148",
+                "name": "LV POWER METER - GRID REACTIVE POWER L3 (KVAr)"
+            },
+            {
+                "addr": "DB200,REAL152",
+                "name": "LV POWER METER - GRID TOTAL APPARANT POWER  (KVA)"
+            },
+            {
+                "addr": "DB200,REAL156",
+                "name": "LV POWER METER - GRID TOTAL ACTIVE POWER (KW)"
+            },
+            {
+                "addr": "DB200,REAL160",
+                "name": "LV POWER METER - GRID TOTAL REACTIVE POWER (KVAr)"
+            },
+            {
+                "addr": "DB200,REAL164",
+                "name": "LV POWER METER - GRID ACTIVE ENERGY USAGE (KWh)"
+            },
+            {
+                "addr": "DB200,REAL168",
+                "name": "LV POWER METER - GRID REACTIVE ENERGY USAGE (KVArh)"
+            },
+            {
+                "addr": "DB200,REAL172",
+                "name": "LV POWER METER - GRID APPARANT ENERGY USAGE (KVArh)"
+            },
+            {
+                "addr": "DB201,REAL0",
+                "name": "LV POWER METER - Backup VOLTS L1 TO NEUTRAL (VOLTS)"
+            },
+            {
+                "addr": "DB201,REAL4",
+                "name": "LV POWER METER - Backup VOLTS L2 TO NEUTRAL (VOLTS)"
+            },
+            {
+                "addr": "DB201,REAL8",
+                "name": "LV POWER METER - Backup VOLTS L3 TO NEUTRAL (VOLTS)"
+            },
+            {
+                "addr": "DB201,REAL12",
+                "name": "LV POWER METER - Backup VOLTS L1 TO L2 (VOLTS)"
+            },
+            {
+                "addr": "DB201,REAL16",
+                "name": "LV POWER METER - Backup VOLTS L2 TO L3 (VOLTS)"
+            },
+            {
+                "addr": "DB201,REAL20",
+                "name": "LV POWER METER - Backup VOLTS L3 TO L1 (VOLTS)"
+            },
+            {
+                "addr": "DB201,REAL24",
+                "name": "LV POWER METER - Backup CURRENT L1 (AMPS)"
+            },
+            {
+                "addr": "DB201,REAL28",
+                "name": "LV POWER METER - Backup CURRENT L2 (AMPS)"
+            },
+            {
+                "addr": "DB201,REAL32",
+                "name": "LV POWER METER - Backup CURRENT L3 (AMPS)"
+            },
+            {
+                "addr": "DB201,REAL36",
+                "name": "LV POWER METER - Backup APPARANT POWER  L1 (VA)"
+            },
+            {
+                "addr": "DB201,REAL40",
+                "name": "LV POWER METER - Backup APPARANT POWER  L2 (VA)"
+            },
+            {
+                "addr": "DB201,REAL44",
+                "name": "LV POWER METER - Backup APPARANT POWER  L3 (VA)"
+            },
+            {
+                "addr": "DB201,REAL48",
+                "name": "LV POWER METER - Backup ACTIVE POWER L1 (W)"
+            },
+            {
+                "addr": "DB201,REAL52",
+                "name": "LV POWER METER - Backup ACTIVE POWER L2 (W)"
+            },
+            {
+                "addr": "DB201,REAL56",
+                "name": "LV POWER METER - Backup ACTIVE POWER L3 (W)"
+            },
+            {
+                "addr": "DB201,REAL60",
+                "name": "LV POWER METER - Backup REACTIVE POWER L1 (VAr)"
+            },
+            {
+                "addr": "DB201,REAL64",
+                "name": "LV POWER METER - Backup REACTIVE POWER L2 (VAr)"
+            },
+            {
+                "addr": "DB201,REAL68",
+                "name": "LV POWER METER - Backup REACTIVE POWER L3 (VAr)"
+            },
+            {
+                "addr": "DB201,REAL72",
+                "name": "LV POWER METER - Backup POWER FACTOR L1"
+            },
+            {
+                "addr": "DB201,REAL76",
+                "name": "LV POWER METER - Backup POWER FACTOR L2"
+            },
+            {
+                "addr": "DB201,REAL80",
+                "name": "LV POWER METER - Backup POWER FACTOR L3"
+            },
+            {
+                "addr": "DB201,REAL84",
+                "name": "LV POWER METER - Backup FREQUENCY (HZ)"
+            },
+            {
+                "addr": "DB201,REAL88",
+                "name": "LV POWER METER - Backup TOTAL APPARANT POWER (VA)"
+            },
+            {
+                "addr": "DB201,REAL92",
+                "name": "LV POWER METER - Backup TOTAL ACTIVE POWER (W)"
+            },
+            {
+                "addr": "DB201,REAL96",
+                "name": "LV POWER METER - Backup TOTAL REACTIVE POWER (VAr)"
+            },
+            {
+                "addr": "DB201,REAL100",
+                "name": "LV POWER METER - Backup TOTAL POWER FACTOR"
+            },
+            {
+                "addr": "DB201,REAL104",
+                "name": "LV POWER METER - Backup ACTIVE ENERGY USAGE (Wh)"
+            },
+            {
+                "addr": "DB201,REAL108",
+                "name": "LV POWER METER - Backup REACTIVE ENERGY USAGE (VArh)"
+            },
+            {
+                "addr": "DB201,REAL112",
+                "name": "LV POWER METER - Backup APPARANT ENERGY USAGE (VArh)"
+            },
+            {
+                "addr": "DB201,REAL116",
+                "name": "LV POWER METER - Backup APPARANT POWER L1 (KVA)"
+            },
+            {
+                "addr": "DB201,REAL120",
+                "name": "LV POWER METER - Backup APPARANT POWER L2 (KVA)"
+            },
+            {
+                "addr": "DB201,REAL124",
+                "name": "LV POWER METER - Backup APPARANT POWER L3 (KVA)"
+            },
+            {
+                "addr": "DB201,REAL128",
+                "name": "LV POWER METER - Backup ACTIVE POWER L1 (KVA)"
+            },
+            {
+                "addr": "DB201,REAL132",
+                "name": "LV POWER METER - Backup ACTIVE POWER L2 (KVA)"
+            },
+            {
+                "addr": "DB201,REAL136",
+                "name": "LV POWER METER - Backup ACTIVE POWER L3 (KVA)"
+            },
+            {
+                "addr": "DB201,REAL140",
+                "name": "LV POWER METER - Backup REACTIVE POWER L1 (KVAr)"
+            },
+            {
+                "addr": "DB201,REAL144",
+                "name": "LV POWER METER - Backup REACTIVE POWER L2 (KVAr)"
+            },
+            {
+                "addr": "DB201,REAL148",
+                "name": "LV POWER METER - Backup REACTIVE POWER L3 (KVAr)"
+            },
+            {
+                "addr": "DB201,REAL152",
+                "name": "LV POWER METER - Backup TOTAL APPARANT POWER  (KVA)"
+            },
+            {
+                "addr": "DB201,REAL156",
+                "name": "LV POWER METER - Backup TOTAL ACTIVE POWER (KW)"
+            },
+            {
+                "addr": "DB201,REAL160",
+                "name": "LV POWER METER - Backup TOTAL REACTIVE POWER (KVAr)"
+            },
+            {
+                "addr": "DB201,REAL164",
+                "name": "LV POWER METER - Backup ACTIVE ENERGY USAGE (KWh)"
+            },
+            {
+                "addr": "DB201,REAL168",
+                "name": "LV POWER METER - Backup REACTIVE ENERGY USAGE (KVArh)"
+            },
+            {
+                "addr": "DB201,REAL172",
+                "name": "LV POWER METER - Backup APPARANT ENERGY USAGE (KVArh)"
+            },
+            {
+                "addr": "DB400,DINT4",
+                "name": "Turbine RPMx100"
+            },
+            {
+                "addr": "DB400,DINT8",
+                "name": "Turbine ACTIVE POWER KW (x100)"
+            },
+            {
+                "addr": "DB400,DINT12",
+                "name": "Turbine LIVE STEAM PRESSURE BAR (x100)"
+            },
+            {
+                "addr": "DB400,DINT16",
+                "name": "Turbine EXTRACTION STEAM PRESSURE BAR (x100)"
+            },
+            {
+                "addr": "DB400,DINT20",
+                "name": "Turbine EXHAUST STEAM PRESSURE BAR (x100)"
+            },
+            {
+                "addr": "DB400,DINT24",
+                "name": "Turbine DIFF PRESSURE BLADE WHEEL TURBINE 2 (0-2.5BAR)"
+            },
+            {
+                "addr": "DB400,DINT32",
+                "name": "Turbine LOW PRESSURE OIL MIST mBAR (x100)"
+            },
+            {
+                "addr": "DB400,DINT36",
+                "name": "Turbine PRDS VALVE OPENING POSITION %"
+            },
+            {
+                "addr": "DB400,DINT40",
+                "name": "Turbine WATER INJECTION VALVE OPENING POSITION %"
+            },
+            {
+                "addr": "DB400,DINT48",
+                "name": "Turbine AXIAL POSITION (POS 32) (x100)"
+            },
+            {
+                "addr": "DB400,DINT52",
+                "name": "Turbine RELATIVE ROTOR POSITION POS 33.1 (x100)"
+            },
+            {
+                "addr": "DB400,DINT56",
+                "name": "Turbine RELATIVE ROTOR POSITION POS 33.2 (x100)"
+            },
+            {
+                "addr": "DB400,DINT60",
+                "name": "Turbine VIBRATION MONITORING AT GEARBOX mm/s (x100)"
+            },
+            {
+                "addr": "DB400,DINT64",
+                "name": "Turbine VIBRATION MONITORING AT GENERATOR mm/s (x100)"
+            },
+            {
+                "addr": "DB400,DINT68",
+                "name": "Turbine WINDING TEMPERATURE U DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT72",
+                "name": "Turbine WINDING TEMPERATURE V DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT76",
+                "name": "Turbine WINDING TEMPERATURE W DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT80",
+                "name": "Turbine LIVE STEAM TEMPERATURE DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT84",
+                "name": "Turbine GENERATOR BEARING TEMPERATURE A DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT88",
+                "name": "Turbine GENERATOR BEARING TEMPERATURE B DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT92",
+                "name": "Turbine GEN. COOLING TEMPERATURE DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT96",
+                "name": "Turbine"
+            },
+            {
+                "addr": "DB400,DINT100",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.1 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT104",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.2 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT108",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.3 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT112",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.4 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT116",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.5 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT120",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.6 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT124",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.7 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT128",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.8 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT132",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.9 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT136",
+                "name": "Turbine TURBINE BEARING TEMPERATURE POS 84.10 DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT140",
+                "name": "Turbine"
+            },
+            {
+                "addr": "DB400,DINT144",
+                "name": "Turbine"
+            },
+            {
+                "addr": "DB400,DINT148",
+                "name": "Turbine TURBINE BLADE WHEEL TEMPERATURE DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT152",
+                "name": "Turbine TEMPERATURE OIL COOLER DEG C (POS 87)"
+            },
+            {
+                "addr": "DB400,DINT156",
+                "name": "Turbine OIL TANK TEMPERATURE DEG C (x100)"
+            },
+            {
+                "addr": "DB400,DINT160",
+                "name": "Turbine OPERATING HOURS"
+            },
+            {
+                "addr": "DB400,DINT164",
+                "name": "Turbine NUMBER OF STARTS"
+            },
+            {
+                "addr": "DB400,DINT168",
+                "name": "Turbine VOLTAGE L1-L2"
+            },
+            {
+                "addr": "DB400,DINT172",
+                "name": "Turbine VOLTAGE L2-L3"
+            },
+            {
+                "addr": "DB400,DINT176",
+                "name": "Turbine VOLTAGE L1-L3"
+            },
+            {
+                "addr": "DB400,DINT180",
+                "name": "Turbine FREQUENCY HZ"
+            },
+            {
+                "addr": "DB400,DINT184",
+                "name": "Turbine CURRENT L1"
+            },
+            {
+                "addr": "DB400,DINT188",
+                "name": "Turbine CURRENT L2"
+            },
+            {
+                "addr": "DB400,DINT192",
+                "name": "Turbine CURRENT L3"
+            },
+            {
+                "addr": "DB400,DINT196",
+                "name": "Turbine POWER FACTOR"
+            },
+            {
+                "addr": "DB400,DINT200",
+                "name": "Turbine ACTIVE POWER KW"
+            },
+            {
+                "addr": "DB400,DINT204",
+                "name": "Turbine REACTIVE POWER KVAR"
+            },
+            {
+                "addr": "DB400,DINT212",
+                "name": "Turbine ACTIVE POWER COUNTER KWH"
+            },
+            {
+                "addr": "DB400,DINT216",
+                "name": "Turbine MAINS VOLTAGE"
+            },
+            {
+                "addr": "DB400,DINT220",
+                "name": "Turbine MAINS FREQUENCY"
+            }
+        ]
+    },
+    {
+        "id": "e928c3e50ff759c0",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "THPL",
+        "server": "127.0.0.1",
+        "port": "1433",
+        "encyption": false,
+        "trustServerCertificate": true,
+        "database": "TWINWOODS_PLANT",
+        "useUTC": false,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    },
+    {
+        "id": "c801159c30c89d03",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-s7": "3.1.0",
+            "node-red-contrib-mssql-plus": "0.13.1"
+        }
+    }
+]
